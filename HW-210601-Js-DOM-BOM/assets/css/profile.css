@@ -1,0 +1,19 @@
+
+.wrapper{
+    background-color: #f2cc8f;
+    border-color: #c9955b!important;
+}
+
+h1{
+    color: #000;
+}
+
+p{
+    font-size: 28px;
+    color: #65a184;
+}
+
+p.label{
+    font-size: 24px;
+    color: #000;
+}
