@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Register</title>
+</head>
+<body>
+
+    <main>
+        <section id="register-section">
+          <div class="container">
+            <div class="row justify-content-center mt-5">
+              <div class="col-md-6 col-12">
+                <div class="form-wrapper p-3 border border-4 rounded-3">
+                  <form>
+                    <div class="mb-3">
+                      <div class="mb-3">
+                        <label for="firstname" class="form-label">Firstname</label>
+                        <input type="text" class="form-control" id="firstname">
+                        <div>
+                          <span class="text-danger d-none firstname-error">Please write your Firstname</span>
+                          <span class="text-danger d-none fn-length-error">Length must be minimum 3 maximum 50 character</span>
+                      </div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="lastname" class="form-label">Lastname</label>
+                        <input type="text" class="form-control" id="lastname">
+                        <div>
+                          <span class="text-danger d-none lastname-error">Please write your Lastname</span>
+                          <span class="text-danger d-none ln-length-error">Length must be minimum 3 maximum 50 character</span>
+                      </div>
+                      </div>
+                      <label for="email" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      <div>
+                        <span class="text-danger d-none email-error">Please write your E-mail address</span>
+                        <span class="text-danger d-none e-length-error">Please write valied e-mail, for examle: user@user.com</span>
+                    </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="password">
+                      <div>
+                        <span class="text-danger d-none password-error">Please write a password</span>
+                        <span class="text-danger d-none length-error">Length must be minimum 3 maximum 50 character</span>
+                    </div>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="register">Register</button>
+                  </form>
+                </div>                  
+              </div>
+          </div>
+          </div>            
+        </section>
+    </main>
+    
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
